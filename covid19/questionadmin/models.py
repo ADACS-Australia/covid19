@@ -121,6 +121,7 @@ class Answer(models.Model):
     question = models.ForeignKey('Question', models.DO_NOTHING)
     participant = models.ForeignKey('Participant', models.DO_NOTHING)
     scale_Answer = models.IntegerField(null=True)
+    dateAnswered = models.DateTimeField(null=True)
     dateFrom = models.DateTimeField(null=True)
     dateTo = models.DateTimeField(null=True)
     freeform_text = models.TextField(null=True)
